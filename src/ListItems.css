@@ -8,4 +8,11 @@
 }
 .list p{
     padding: 15px 20px;
+    position: relative;
+}
+
+.list p span{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
 }

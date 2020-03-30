@@ -28,13 +28,12 @@ class App extends React.Component {
   addItem(event) {
     event.preventDefault()
     const newItem = this.state.currentItem;
-    console.log(newItem.text)
 
     if (newItem.text !== '') {
-      const items = [...this.state.items, newItem];
-      console.log(items)
+      const newItems = [...this.state.items, newItem];
+
       this.setState({
-        items: newItem,
+        items: newItems,
         currentItem: {
           text: '',
           key: ''

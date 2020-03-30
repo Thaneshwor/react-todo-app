@@ -1,11 +1,12 @@
 import React from 'react';
+import Trash from './trash.png'
 import './ListItems.css'
 
 function ListItems(props) {
     const items = props.items;
     const listItems = items.map(item => {
         return <div className='list' key={item.key}>
-            <p>{item.text}</p>
+            <p>{item.text}<span><img src={Trash} /></span></p>
         </div>
 
     })
